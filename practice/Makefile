@@ -1,5 +1,8 @@
-main: main.c
-	gcc main.c -o main
+CPPFLAGS=-mrdrnd
+
+all: main
+
+main: main.cc
 
 clean:
 	rm main main.o
